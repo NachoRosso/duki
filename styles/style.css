@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carme&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.colornav{
+    background-color: black;
+}
+
+.menua:hover{
+    color: red;
+}
+
+.menua{
+    color:  #cc0404;
+    font-size: medium;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Rosario", sans-serif;
+    }
+
+.iconomenu{
+    background-image: url(../assets/img/menu.png);
+}
+
+nav a{
+    color:  #cc0404;
+    font-size: medium;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Rosario", sans-serif;
+    }
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    }
+
+nav ul li{
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+a{
+    color: black;
+    font-size: medium;
+    text-decoration: none;
+    font-family: "Carme", sans-serif;
+    text-transform: uppercase;
+    }
+
+body{
+    background-color: #a20e0e;
+    }
+
+section{
+    text-align: center;
+    padding: 1% 0;
+    }
+
+ul{
+    list-style: none;
+    }
+
+body h2{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Rosario", sans-serif;
+    font-size: xx-large;
+    padding: 1% 0;
+    }
+
+.showmenu{
+    color: black;
+    font-size: large;
+    font-family: "Carme", sans-serif;
+    text-transform: uppercase;
+    }
+
+.showmenu a{
+    text-decoration: underline;
+    }
+
+.menucontacto label{
+    font-family: "Carme", sans-serif;
+    text-transform: uppercase;
+ }
+
+.albumespag{
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+    background-color: #000000;
+    padding: 12px 0;
+    border: 2px solid #cc0404;
+    border-radius: 15px;
+}
+
+.iconosalbum{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 1em;
+}
+
+.albumespag h3{
+    color: #cc0404;
+    font-size: 1.5em;
+    padding: 5px 0;
+}
+
+.albumespag h4{
+    color: #cc0404;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+.tablasshow{
+    display:grid;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "pais fecha lugar comprar"
+    "pais fecha lugar comprar"
+    "pais fecha lugar comprar"
+    "pais fecha lugar comprar"
+    "pais fecha lugar comprar";
+    }
+
+.paissh{
+    grid-area: pais;
+    }
+.paissh p{
+    border: #000000 solid 1px;
+    }
+
+.fechash{
+    grid-area: fecha;
+    }
+.fechash p{
+    border: #000000 solid 1px;
+    }
+
+.lugarsh{
+    grid-area: lugar;
+    }
+.lugarsh p{
+    border: #000000 solid 1px;
+    }
+
+.comprarsh{
+    grid-area: comprar;
+    }
+.comprarsh p{
+    border: #000000 solid 1px;
+    }
+    
+.fotoduki{
+    padding-top: 1%;
+    }
+
+.tdrtexto h3{
+    font-size: 1.4em;
+}
+
+.fotosgaleria{
+    padding-bottom: 0.23em;
+}
+
+.contactopag{
+    text-align: start;
+    display: grid;
+    margin: auto;  
+    width: 98%;
+}
+
+.cont-corr-num{
+    display: flex;
+    flex-direction: row;
+}
+
+.barra25{
+    width: 25%;
+}
+.barra50{
+    width: 50%;
+}
+
+
+.botonenviar{
+    color: white;
+    border: 2px solid #cc0404;
+    background-color: #000000;
+    font-family: "Carme", sans-serif;
+}
+
+body label{
+    font-family: "Carme", sans-serif;
+    text-transform: uppercase;
+}
+
+.maincontacto{
+    flex: 1;
+    padding-top: 1em;
+    padding-bottom: 10em;
+}
+
+footer{
+    background-color: black;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+footer .redesfoot{
+    display: flex;
+    gap:2em;
+    padding-right: 30%;
+    }
+
+footer .logosfoot{
+    display: flex;
+    padding-left: 15%;
+    gap: 2em;
+}
+
+@media (max-width: 768px){
+    body {
+        font-size: 16px;
+        padding:10px;
+    }
+
+    body, html{
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    header img{
+        height: 75%;
+        width: 75%;
+        align-items: center;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: start;
+    }
+    nav ul li{
+        margin-left: 0;
+    }
+    
+    h2{
+        font-size:1.5em;
+    }
+
+    a{
+        font-size: 90%;
+    }
+
+    section img{
+        padding-top: 1em;
+        width: 75%;
+        height: 75%;
+    }
+
+    .albumespag{
+        display: inline-block;
+        height: 95%;
+        width: 65%;
+        background-color: #000000;
+        padding: 12px 0;
+        border: 2px solid #cc0404;
+        border-radius: 15px;
+    }
+
+    .albumespag h3{
+        padding-top: 1em;
+    }
+
+    .iconosalbum img {
+        width: 2em;
+        height: 3em;
+    }
+
+    .fotoh2{
+        padding-top: 0.5em;
+    }
+
+    .fotosindex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2%;
+    }
+
+    .fotosindex img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .videos{
+        width: 90%;
+        height: 90%;
+    }
+
+    .contactopag{
+        width: 90%;
+    }
+
+    .cont-corr-num{
+        flex-direction: column;
+    }
+
+    .barra25{
+        width: 90%;
+    }
+    .barra50{
+        width: 90%;
+    }
+
+    footer{
+        flex-direction: column;
+        gap:2em;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer .redesfoot{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; 
+        gap: 20px; 
+        padding: 10px; 
+    }
+
+    footer .logosfoot{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; 
+        gap: 30px; 
+        padding: 10px;
+        padding-bottom: 15px;
+    }
+}
+
+
+
+
+
