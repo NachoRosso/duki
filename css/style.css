@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.estilo-letra, label, body a, body h2 {
+.estilo-letra, label, .contenedorshow, body a, body h2 {
   color: black;
   text-transform: uppercase;
 }
@@ -43,7 +43,7 @@ header nav ul li a.clickear:hover, header nav ul li a.clickear:focus {
   color: red;
 }
 
-.estilo-letra, label, body a, body h2 {
+.estilo-letra, label, .contenedorshow, body a, body h2 {
   color: black;
   text-transform: uppercase;
 }
@@ -76,7 +76,7 @@ body ul {
   list-style: none;
 }
 
-.estilo-letra, label, body h2, body a {
+.estilo-letra, label, .contenedorshow, body h2, body a {
   color: black;
   text-transform: uppercase;
 }
@@ -132,7 +132,76 @@ body ul {
   padding-bottom: 1em;
 }
 
-.estilo-letra, label, body h2, body a {
+.estilo-letra, label, .contenedorshow, body h2, body a {
+  color: black;
+  text-transform: uppercase;
+}
+
+.containersfoot, footer .logosfoot, footer .redesfoot {
+  display: flex;
+  gap: 2em;
+}
+
+.anchomenu {
+  text-align: start;
+  display: grid;
+  margin: auto;
+  width: 80%;
+  padding-bottom: 2em;
+}
+
+.showmenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedorshow {
+  font-size: large;
+  font-family: "Carme", sans-serif;
+  display: grid;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "pais fecha lugar comprar";
+  padding: 0.5em 5em;
+  border-bottom: 2px solid black;
+}
+.contenedorshow a {
+  text-decoration: underline;
+}
+.contenedorshow p {
+  margin: 0;
+  text-align: center;
+}
+
+.pais {
+  grid-area: pais;
+}
+
+.fecha {
+  grid-area: fecha;
+}
+
+.lugar {
+  grid-area: lugar;
+}
+
+.comprar {
+  grid-area: comprar;
+}
+
+@media (max-width: 768px) {
+  .contenedorshow {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pais" "fecha" "lugar" "comprar";
+    padding: 1em;
+    gap: 0.5em;
+  }
+}
+.estilo-letra, label, body h2, body a, .contenedorshow {
   color: black;
   text-transform: uppercase;
 }
@@ -188,7 +257,7 @@ label {
   padding-bottom: 2rem;
 }
 
-.estilo-letra, body h2, body a, label {
+.estilo-letra, body h2, body a, .contenedorshow, label {
   color: black;
   text-transform: uppercase;
 }
@@ -215,7 +284,7 @@ footer .logosfoot {
   padding-left: 15%;
 }
 
-.estilo-letra, body h2, body a, label {
+.estilo-letra, body h2, body a, .contenedorshow, label {
   color: black;
   text-transform: uppercase;
 }
@@ -263,6 +332,11 @@ footer .logosfoot {
   a {
     font-size: 90%;
   }
+  .textogrande {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .albumespag {
     display: inline-block;
     height: 95%;
@@ -307,6 +381,7 @@ footer .logosfoot {
     gap: 2em;
     width: 100%;
     height: 100%;
+    padding: 12px 0;
   }
   footer .redesfoot {
     justify-content: center;
@@ -314,6 +389,10 @@ footer .logosfoot {
     flex-wrap: wrap;
     gap: 20px;
     padding: 10px;
+  }
+  footer .redesfoot img {
+    width: 90%;
+    height: 90%;
   }
   footer .logosfoot {
     justify-content: center;

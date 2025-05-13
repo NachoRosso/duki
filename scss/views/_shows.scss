@@ -1,0 +1,65 @@
+@import "../utilities/variables";
+
+.anchomenu{
+    text-align: start;
+    display: grid;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 2em;
+}
+
+.showmenu{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorshow{
+    @extend .estilo-letra;
+    font-size: large;
+    font-family: "Carme", sans-serif;
+    display: grid;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "pais fecha lugar comprar";
+    padding: 0.5em 5em;
+    border-bottom: 2px solid black;
+    a{
+        text-decoration: underline;
+    }
+    p{
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.pais{
+    grid-area: pais;
+    }
+.fecha{
+    grid-area: fecha;
+    }
+.lugar{
+    grid-area: lugar;
+}
+.comprar{
+    grid-area: comprar;
+}
+
+//adaptamiento hecho en esta pagina porque es de la unica forma que anda
+@media (max-width: 768px) {
+    .contenedorshow{
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+            "pais"
+            "fecha"
+            "lugar"
+            "comprar";
+        padding: 1em;
+        gap: 0.5em; 
+    }
+}

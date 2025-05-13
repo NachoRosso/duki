@@ -42,6 +42,14 @@
     a{
         font-size: 90%;
     }
+
+    .textogrande{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    //_album en responsive
     .albumespag{
         display: inline-block;
         height: 95%;
@@ -58,6 +66,8 @@
         height: 3em;
         }
     }
+
+    //fotos que se encuentran dentro del index
     .fotosindex{
         display: flex;
         flex-direction: column;
@@ -68,10 +78,14 @@
             height: 150px;
         }
     }
+
+    //videos de galeria
     .videos{
         width: 85%;
         height: 15em;
     }
+
+    //adaptamiento responsive de la pagina de contacto
     .contactopag{
         width: 90%;
     }
@@ -81,17 +95,23 @@
     .barra25, .barra50{
         width: 90%;
     }
+
     footer{
         flex-direction: column;
         gap:2em;
         width: 100%;
         height: 100%;
+        padding: 12px 0;
         .redesfoot{
             justify-content: center;
             align-items: center;
             flex-wrap: wrap; 
             gap: 20px; 
-            padding: 10px; 
+            padding: 10px;
+            img{
+                width: 90%;
+                height: 90%;
+            }
         }
         .logosfoot{
             justify-content: center;

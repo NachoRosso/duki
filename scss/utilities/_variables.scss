@@ -1,5 +1,7 @@
+//variables
 $rojo-secundario: #cc0404;
 
+//extends
 .estilo-letra{
     color:black;
     text-transform: uppercase
@@ -10,6 +12,7 @@ $rojo-secundario: #cc0404;
     gap:2em;
 }
 
+//mixins
 @mixin albumesh ($tamanio, $padding) {
     color: $rojo-secundario;
     font-size: $tamanio;
