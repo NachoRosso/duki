@@ -251,6 +251,11 @@ label {
   background-color: #000000;
   font-family: "Carme", sans-serif;
 }
+.botonenviar:hover {
+  background-color: #000000;
+  border: 2px solid #cc0404;
+  color: red;
+}
 
 .bordecontacto {
   border-radius: 0.5rem;
