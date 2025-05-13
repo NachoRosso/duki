@@ -1,0 +1,34 @@
+@import "../utilities/variables";
+
+.colornav{
+        background-color: black;
+        }
+.iconomenu{
+    background-image: url(../assets/img/menu.png);
+}
+
+header {
+    nav{
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                margin-left: 50px;
+                margin-right: 20px;
+                a.menua {
+                    color: $rojo-secundario;
+                    font-size: medium;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: "Rosario", sans-serif;
+                    }
+                a.clickear{
+                    &:hover, &:focus{
+                        color: red;
+                    }
+                    }
+                }
+            }
+        }    
+    }
+

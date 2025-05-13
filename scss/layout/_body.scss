@@ -1,0 +1,26 @@
+@import "../utilities/variables";
+
+body{
+    background-color: #a20e0e;
+    h2{
+        @extend .estilo-letra;
+        font-family: "Rosario", sans-serif;
+        text-align: center;
+        font-weight: bold;
+        font-size: xx-large;
+        padding: 1% 0;
+    }
+    a{
+        @extend .estilo-letra;
+        font-family: "Carme", sans-serif;
+        text-decoration: none;
+        font-size: medium;
+    }
+    section{
+        text-align: center;
+        padding: 1% 0;
+    }
+    ul{
+        list-style: none;
+    }
+}

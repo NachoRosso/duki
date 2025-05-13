@@ -1,0 +1,28 @@
+@import "../utilities/variables";
+
+.albumespag{
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+    background-color: #000000;
+    padding: 15px 0;
+    border: 2px solid #cc0404;
+    border-radius: 15px;
+    img{
+        width: 95%;
+        height: 95%;
+    }
+    .iconosalbum{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 10px 0;
+        padding-bottom: 1em;
+    }
+    h3{
+        @include albumesh(1.5em, 10px 0)
+    }
+    h4{
+        @include albumesh(1.2em, 10px 0)
+    }
+}

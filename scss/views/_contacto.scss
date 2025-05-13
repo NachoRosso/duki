@@ -1,0 +1,49 @@
+@import "../utilities/variables";
+
+.maincontacto {
+  flex: 1;
+  padding-top: 1em;
+  padding-bottom: 10em;
+}
+
+label {
+  @extend .estilo-letra;
+  font-family: "Rosario", sans-serif;
+}
+
+.contactopag {
+  text-align: start;
+  display: grid;
+  margin: auto;
+  width: 90%;
+}
+
+.barra25 {
+  width: 25%;
+  min-width: 200px;
+}
+
+.barra50 {
+  width: 50%;
+  min-width: 300px;
+}
+
+.cont-corr-num {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.botonenviar {
+  color: white;
+  border: 2px solid #cc0404;
+  background-color: #000000;
+  font-family: "Carme", sans-serif;
+}
+
+.bordecontacto {
+  border-radius: 0.5rem;
+  padding-bottom: 2rem;
+}
+

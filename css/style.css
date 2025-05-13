@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carme&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.estilo-letra, label, body a, body h2 {
+  color: black;
+  text-transform: uppercase;
+}
+
+.containersfoot, footer .logosfoot, footer .redesfoot {
+  display: flex;
+  gap: 2em;
+}
+
+.colornav {
+  background-color: black;
+}
+
+.iconomenu {
+  background-image: url(../assets/img/menu.png);
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+header nav ul li {
+  margin-left: 50px;
+  margin-right: 20px;
+}
+header nav ul li a.menua {
+  color: #cc0404;
+  font-size: medium;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Rosario", sans-serif;
+}
+header nav ul li a.clickear:hover, header nav ul li a.clickear:focus {
+  color: red;
+}
+
+.estilo-letra, label, body a, body h2 {
+  color: black;
+  text-transform: uppercase;
+}
+
+.containersfoot, footer .logosfoot, footer .redesfoot {
+  display: flex;
+  gap: 2em;
+}
+
+body {
+  background-color: #a20e0e;
+}
+body h2 {
+  font-family: "Rosario", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 1% 0;
+}
+body a {
+  font-family: "Carme", sans-serif;
+  text-decoration: none;
+  font-size: medium;
+}
+body section {
+  text-align: center;
+  padding: 1% 0;
+}
+body ul {
+  list-style: none;
+}
+
+.estilo-letra, label, body h2, body a {
+  color: black;
+  text-transform: uppercase;
+}
+
+.containersfoot, footer .logosfoot, footer .redesfoot {
+  display: flex;
+  gap: 2em;
+}
+
+.albumespag {
+  display: inline-block;
+  height: 100%;
+  width: 25%;
+  background-color: #000000;
+  padding: 15px 0;
+  border: 2px solid #cc0404;
+  border-radius: 15px;
+}
+.albumespag img {
+  width: 95%;
+  height: 95%;
+}
+.albumespag .iconosalbum {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 10px 0;
+  padding-bottom: 1em;
+}
+.albumespag h3 {
+  color: #cc0404;
+  font-size: 1.5em;
+  padding: 10px 0;
+}
+.albumespag h4 {
+  color: #cc0404;
+  font-size: 1.2em;
+  padding: 10px 0;
+}
+
+.fotosgaleria {
+  padding-bottom: 0.25em;
+}
+.fotosgaleria img {
+  padding: 0.25em;
+}
+
+.fotoduki {
+  padding-top: 1%;
+}
+
+.videos {
+  padding-bottom: 1em;
+}
+
+.estilo-letra, label, body h2, body a {
+  color: black;
+  text-transform: uppercase;
+}
+
+.containersfoot, footer .logosfoot, footer .redesfoot {
+  display: flex;
+  gap: 2em;
+}
+
+.maincontacto {
+  flex: 1;
+  padding-top: 1em;
+  padding-bottom: 10em;
+}
+
+label {
+  font-family: "Rosario", sans-serif;
+}
+
+.contactopag {
+  text-align: start;
+  display: grid;
+  margin: auto;
+  width: 90%;
+}
+
+.barra25 {
+  width: 25%;
+  min-width: 200px;
+}
+
+.barra50 {
+  width: 50%;
+  min-width: 300px;
+}
+
+.cont-corr-num {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.botonenviar {
+  color: white;
+  border: 2px solid #cc0404;
+  background-color: #000000;
+  font-family: "Carme", sans-serif;
+}
+
+.bordecontacto {
+  border-radius: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.estilo-letra, body h2, body a, label {
+  color: black;
+  text-transform: uppercase;
+}
+
+.containersfoot, footer .logosfoot, footer .redesfoot {
+  display: flex;
+  gap: 2em;
+}
+
+footer {
+  background-color: black;
+  padding: 12px 2em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .redesfoot {
+  padding-right: 30%;
+  justify-content: space-evenly;
+}
+footer .logosfoot {
+  padding-left: 15%;
+}
+
+.estilo-letra, body h2, body a, label {
+  color: black;
+  text-transform: uppercase;
+}
+
+.containersfoot, footer .redesfoot, footer .logosfoot {
+  display: flex;
+  gap: 2em;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  header img {
+    height: 70%;
+    width: 70%;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  nav ul li {
+    margin-left: 0;
+  }
+  section h2 {
+    font-size: 1.8em;
+    padding-top: 0.8em;
+  }
+  section img {
+    padding-top: 1em;
+    width: 75%;
+    height: 75%;
+  }
+  a {
+    font-size: 90%;
+  }
+  .albumespag {
+    display: inline-block;
+    height: 95%;
+    width: 65%;
+    background-color: #000000;
+    padding: 12px 0;
+    border: 2px solid #cc0404;
+    border-radius: 15px;
+  }
+  .albumespag h3 {
+    padding-top: 1em;
+  }
+  .albumespag .iconosalbum img {
+    width: 2em;
+    height: 3em;
+  }
+  .fotosindex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+  }
+  .fotosindex img {
+    width: 150px;
+    height: 150px;
+  }
+  .videos {
+    width: 85%;
+    height: 15em;
+  }
+  .contactopag {
+    width: 90%;
+  }
+  .cont-corr-num {
+    flex-direction: column;
+  }
+  .barra25, .barra50 {
+    width: 90%;
+  }
+  footer {
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    height: 100%;
+  }
+  footer .redesfoot {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+  }
+  footer .logosfoot {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    padding-bottom: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

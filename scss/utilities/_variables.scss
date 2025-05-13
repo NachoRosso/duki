@@ -1,0 +1,17 @@
+$rojo-secundario: #cc0404;
+
+.estilo-letra{
+    color:black;
+    text-transform: uppercase
+}
+
+.containersfoot{
+    display: flex;
+    gap:2em;
+}
+
+@mixin albumesh ($tamanio, $padding) {
+    color: $rojo-secundario;
+    font-size: $tamanio;
+    padding: $padding;
+}
