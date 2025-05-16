@@ -26,3 +26,32 @@
         @include albumesh(1.2em, 10px 0)
     }
 }
+
+.albumespagindex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(hsla(0, 0%, 0%, 0.9), rgba(0, 0, 0, 0.9));
+    width:28%;
+    padding: 1.5em;
+    border: 2px solid $rojo-secundario;
+    border-radius: 15px;
+    gap: 1.5em;
+    .iconosalbum{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+        padding-bottom: 1em;
+        img{
+            width: 98%;
+            height: 98%;
+        }
+    }
+    h3{
+        @include albumesh(1.5em, 0);
+        font-family: $letra-principal;
+        
+    }
+}

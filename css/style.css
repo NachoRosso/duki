@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Carme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.estilo-letra, label, .contenedorshow, body a, body h2 {
+.estilo-letra, .contenedorshowindex, label, .contenedorshow, body a, body h2, body h1 {
   color: black;
   text-transform: uppercase;
 }
@@ -37,13 +37,13 @@ header nav ul li a.menua {
   font-size: medium;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Rosario", sans-serif;
+  font-family: "Michroma", sans-serif;
 }
 header nav ul li a.clickear:hover, header nav ul li a.clickear:focus {
   color: red;
 }
 
-.estilo-letra, label, .contenedorshow, body a, body h2 {
+.estilo-letra, .contenedorshowindex, label, .contenedorshow, body a, body h2, body h1 {
   color: black;
   text-transform: uppercase;
 }
@@ -54,17 +54,24 @@ header nav ul li a.clickear:hover, header nav ul li a.clickear:focus {
 }
 
 body {
-  background-color: #a20e0e;
+  background: #A20E0E;
+}
+body h1 {
+  font-family: "Michroma", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 1% 0;
 }
 body h2 {
-  font-family: "Rosario", sans-serif;
+  font-family: "Michroma", sans-serif;
   text-align: center;
   font-weight: bold;
   font-size: xx-large;
   padding: 1% 0;
 }
 body a {
-  font-family: "Carme", sans-serif;
+  font-family: "Kanit", sans-serif;
   text-decoration: none;
   font-size: medium;
 }
@@ -76,7 +83,7 @@ body ul {
   list-style: none;
 }
 
-.estilo-letra, label, .contenedorshow, body h2, body a {
+.estilo-letra, .contenedorshowindex, label, .contenedorshow, body h1, body h2, body a {
   color: black;
   text-transform: uppercase;
 }
@@ -117,6 +124,36 @@ body ul {
   padding: 10px 0;
 }
 
+.albumespagindex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(hsla(0, 0%, 0%, 0.9), rgba(0, 0, 0, 0.9));
+  width: 28%;
+  padding: 1.5em;
+  border: 2px solid #cc0404;
+  border-radius: 15px;
+  gap: 1.5em;
+}
+.albumespagindex .iconosalbum {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  padding-bottom: 1em;
+}
+.albumespagindex .iconosalbum img {
+  width: 98%;
+  height: 98%;
+}
+.albumespagindex h3 {
+  color: #cc0404;
+  font-size: 1.5em;
+  padding: 0;
+  font-family: "Michroma", sans-serif;
+}
+
 .fotosgaleria {
   padding-bottom: 0.25em;
 }
@@ -124,15 +161,11 @@ body ul {
   padding: 0.25em;
 }
 
-.fotoduki {
-  padding-top: 1%;
-}
-
 .videos {
   padding-bottom: 1em;
 }
 
-.estilo-letra, label, .contenedorshow, body h2, body a {
+.estilo-letra, .contenedorshowindex, label, .contenedorshow, body h1, body h2, body a {
   color: black;
   text-transform: uppercase;
 }
@@ -140,6 +173,21 @@ body ul {
 .containersfoot, footer .logosfoot, footer .redesfoot {
   display: flex;
   gap: 2em;
+}
+
+.gradianteshow {
+  background: #A20E0E;
+  background: linear-gradient(0deg, rgb(162, 14, 14) 50%, rgb(12, 11, 10) 96%);
+  width: 100%;
+  height: 4em;
+}
+
+.fotoduki {
+  background-image: url(../../assets/img/dukiworldtourbanner.png);
+  height: 850px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .anchomenu {
@@ -157,7 +205,7 @@ body ul {
 
 .contenedorshow {
   font-size: large;
-  font-family: "Carme", sans-serif;
+  font-family: "Kanit", sans-serif;
   display: grid;
   width: 90%;
   height: 100%;
@@ -201,7 +249,7 @@ body ul {
     gap: 0.5em;
   }
 }
-.estilo-letra, label, body h2, body a, .contenedorshow {
+.estilo-letra, .contenedorshowindex, label, body h1, body h2, body a, .contenedorshow {
   color: black;
   text-transform: uppercase;
 }
@@ -218,7 +266,7 @@ body ul {
 }
 
 label {
-  font-family: "Rosario", sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 .contactopag {
@@ -249,7 +297,7 @@ label {
   color: white;
   border: 2px solid #cc0404;
   background-color: #000000;
-  font-family: "Carme", sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 .botonenviar:hover {
   background-color: #000000;
@@ -262,7 +310,157 @@ label {
   padding-bottom: 2rem;
 }
 
-.estilo-letra, body h2, body a, .contenedorshow, label {
+.estilo-letra, .contenedorshowindex, body h1, body h2, body a, .contenedorshow, label {
+  color: black;
+  text-transform: uppercase;
+}
+
+.containersfoot, footer .logosfoot, footer .redesfoot {
+  display: flex;
+  gap: 2em;
+}
+
+.gradiante-index-1a2 {
+  width: 100%;
+  height: 4em;
+  background: #000000;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 25%, rgb(124, 156, 180) 70%);
+}
+
+.gradiante-index-2a3 {
+  width: 100%;
+  height: 4em;
+  background: #BCC0B8;
+  background: linear-gradient(180deg, rgb(188, 192, 184) 23%, rgb(162, 14, 14) 78%);
+}
+
+.gradiante-index-3a4 {
+  width: 100%;
+  height: 4em;
+  background: #A20E0E;
+  background: linear-gradient(180deg, rgb(162, 14, 14) 35%, rgb(12, 11, 10) 88%);
+}
+
+.fotodwt {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.781), rgba(0, 0, 0, 0.781)), url(../../assets/img/dukiwtbanner.jpg);
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 4em 2em;
+  justify-content: space-between;
+}
+
+.h1index {
+  color: #cc0404;
+}
+
+.contenedor-grilla-index {
+  display: flex;
+  flex-direction: row;
+}
+
+.anchomenu-i {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedorshowindex {
+  font-size: large;
+  display: grid;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "pais fecha lugar";
+  padding: 0.5em 5em;
+}
+.contenedorshowindex p {
+  font-family: "Kanit", sans-serif;
+  font-size: 0.5em;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.pais-i {
+  grid-area: pais;
+}
+
+.fecha-i {
+  grid-area: fecha;
+}
+
+.lugar-i {
+  grid-area: lugar;
+}
+
+.texto-rojo {
+  color: #cc0404;
+}
+
+@media (max-width: 768px) {
+  .contenedorshowindex {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pais" "fecha" "lugar";
+    padding: 0.5em;
+    gap: 0.5em;
+  }
+}
+.banner-ameri {
+  background-image: linear-gradient(hsla(0, 100%, 99%, 0.101), rgba(255, 255, 255, 0.101)), url(../../assets/img/ameribanner.jpg);
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5em;
+  padding-bottom: 4em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner-galeria-index {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.61), rgba(0, 0, 0, 0.604)), url(../../assets/img/dukibannersecciongaleria.jpg);
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: end;
+  padding: 4em 6em;
+}
+
+.contenedor-fotos-index {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 50%;
+}
+.contenedor-fotos-index h2, .contenedor-fotos-index a {
+  color: white;
+}
+
+.galeria-index {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.fotosindex {
+  gap: 1em;
+}
+.fotosindex img {
+  width: 8em;
+  height: 8em;
+}
+
+.estilo-letra, body h1, body h2, body a, .contenedorshow, label, .contenedorshowindex {
   color: black;
   text-transform: uppercase;
 }
@@ -289,7 +487,7 @@ footer .logosfoot {
   padding-left: 15%;
 }
 
-.estilo-letra, body h2, body a, .contenedorshow, label {
+.estilo-letra, body h1, body h2, body a, .contenedorshow, label, .contenedorshowindex {
   color: black;
   text-transform: uppercase;
 }
@@ -341,6 +539,11 @@ footer .logosfoot {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .cuadrado-negro-mobile {
+    background-color: black;
+    width: 100%;
+    height: 25em;
   }
   .albumespag {
     display: inline-block;

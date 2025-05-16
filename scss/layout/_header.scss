@@ -20,7 +20,7 @@ header {
                     font-size: medium;
                     text-decoration: none;
                     text-transform: uppercase;
-                    font-family: "Rosario", sans-serif;
+                    font-family: $letra-principal;
                     }
                 a.clickear{
                     &:hover, &:focus{

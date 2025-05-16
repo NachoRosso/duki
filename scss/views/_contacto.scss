@@ -8,7 +8,7 @@
 
 label {
   @extend .estilo-letra;
-  font-family: "Rosario", sans-serif;
+  font-family: $letra-secundaria;
 }
 
 .contactopag {
@@ -39,7 +39,7 @@ label {
   color: white;
   border: 2px solid #cc0404;
   background-color: #000000;
-  font-family: "Carme", sans-serif;
+  font-family: $letra-secundaria;
   &:hover{
     background-color: #000000;
     border: 2px solid #cc0404;
