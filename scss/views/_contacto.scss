@@ -1,5 +1,24 @@
 @import "../utilities/variables";
 
+.contenedor-contactoyfoto{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 
+  "foto cuestionario cuestionario cuestionario cuestionario";
+}
+
+.foto-contacto{
+  grid-area: foto;
+  img{
+    width: 80%;
+    height: 80%;
+    border-radius: 200px;
+    border: 3px solid red;
+  }
+}
+
 .maincontacto {
   flex: 1;
   padding-top: 1em;
@@ -16,6 +35,7 @@ label {
   display: grid;
   margin: auto;
   width: 90%;
+  grid-area: cuestionario;
 }
 
 .barra25 {
@@ -52,3 +72,9 @@ label {
   padding-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+    .contenedor-contactoyfoto{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+}

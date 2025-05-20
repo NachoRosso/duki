@@ -49,38 +49,46 @@
 
     <main>
         <section class="animate__animated animate__fadeIn">
-            <h2>Fotos</h2>
+            <h1 class="h-margin-arriba">Fotos</h1>
             <div class="fotosgaleria">
-                <img src="../assets/img/dukigaleriafoto1.jpg" width="289px" height="563px" alt="Duki citando una frase de la cancion Barro tal vez.">
-                <img src="../assets/img/dukigaleriafoto2.jpg" width="289px" height="563px" alt="Duki juntando las manos en la preescucha de Ameri.">
-            </div>
-            <div class="fotosgaleria">
-                <img src="../assets/img/dukigaleriafoto3.jpg" width="289px" height="563px" alt="Duki en Velez con Modo Diablo.">
-                <img src="../assets/img/dukigaleriafoto4.jpg" width="289px" height="563px" alt="Duki en el videoclip de CALL ME MAYBE.">
-            </div>
-            <div class="fotosgaleria">
-                <img src="../assets/img/dukigaleriafoto5.jpg" width="289px" height="563px" alt="Duki con Modo Diablo en el Monumental.">
-                <img src="../assets/img/dukigaleriafoto6.jpg" width="289px" height="563px" alt="Duki vestido de negro mirando para abajo.">
+              <img src="../assets/img/dukigaleriafoto1.jpg" width="289px" height="563px" alt="Duki citando una frase de la cancion Barro tal vez." class="img-galeria">
+              <img src="../assets/img/dukigaleriafoto2.jpg" width="289px" height="563px" alt="Duki juntando las manos en la preescucha de Ameri." class="img-galeria">
+              <img src="../assets/img/dukigaleriafoto3.jpg" width="289px" height="563px" alt="Duki en Velez con Modo Diablo." class="img-galeria">
+              <img src="../assets/img/dukigaleriafoto4.jpg" width="289px" height="563px" alt="Duki en el videoclip de CALL ME MAYBE." class="img-galeria">
+              <img src="../assets/img/dukigaleriafoto5.jpg" width="289px" height="563px" alt="Duki con Modo Diablo en el Monumental." class="img-galeria">
+              <img src="../assets/img/dukigaleriafoto6.jpg" width="289px" height="563px" alt="Duki vestido de negro mirando para abajo." class="img-galeria">
             </div>
         </section>
-        <section class="animate__animated animate__fadeIn">
-            <h2>Videos</h2>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3R3fvkpvSRg?si=AT3r14EvpxfiBvD-" title="YouTube video player" 
+        <section class="animate__animated animate__fadeIn pb-4 mb-4">
+          <h2>Videos</h2>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <iframe width="760" height="435" src="https://www.youtube.com/embed/3R3fvkpvSRg?si=AT3r14EvpxfiBvD-" title="YouTube video player" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  class="videos"></iframe>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4hM8b9jqoY8?si=mN5t42O-px904UXU" title="YouTube video player" 
+              </div>
+              <div class="carousel-item">
+                <iframe width="760" height="435" src="https://www.youtube.com/embed/4hM8b9jqoY8?si=mN5t42O-px904UXU" title="YouTube video player" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  class="videos"></iframe>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/DhAYM2WQtbU?si=eJit6u28YWvxRLRK" title="YouTube video player" 
+              </div>
+              <div class="carousel-item">
+                <iframe width="760" height="435" src="https://www.youtube.com/embed/DhAYM2WQtbU?si=eJit6u28YWvxRLRK" title="YouTube video player" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  class="videos"></iframe>
+              </div>
             </div>
-            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
     </main>
 
     <footer>

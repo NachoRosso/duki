@@ -105,6 +105,8 @@
 .contenedor-fotos-index{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
     width: 50%;
     h2, a{
@@ -115,11 +117,10 @@
 .galeria-index{
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 0.3em;
 }
 
 .fotosindex{
-    gap: 1em;
     img{
         width: 8em;
         height: 8em;

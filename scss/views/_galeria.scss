@@ -1,0 +1,24 @@
+@import "../utilities/variables";
+
+.fotosgaleria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.videos{
+    padding-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+    .fotosgaleria{
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0em;
+    }
+}

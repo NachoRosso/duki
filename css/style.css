@@ -134,14 +134,14 @@ body ul {
   width: 98%;
   height: 98%;
 }
-.albumespag h3 {
+.albumespag h2 {
   color: #cc0404;
   font-size: 1.5em;
   font-family: "Michroma", sans-serif;
   padding-bottom: 0.7em;
   font-size: 1.1em;
 }
-.albumespag h4 {
+.albumespag h3 {
   color: #cc0404;
   font-size: 1.5em;
   padding-bottom: 1em;
@@ -155,7 +155,7 @@ body ul {
   justify-content: space-around;
   align-items: center;
   background: linear-gradient(hsla(0, 0%, 0%, 0.9), rgba(0, 0, 0, 0.9));
-  width: 28%;
+  width: 26%;
   padding: 1.5em;
   border: 2px solid #cc0404;
   border-radius: 15px;
@@ -169,24 +169,13 @@ body ul {
   padding-bottom: 1em;
 }
 .albumespagindex .iconosalbum img {
-  width: 98%;
-  height: 98%;
+  width: 96%;
+  height: 96%;
 }
 .albumespagindex h3 {
   color: #cc0404;
   font-size: 1.5em;
   font-family: "Michroma", sans-serif;
-}
-
-.fotosgaleria {
-  padding-bottom: 0.25em;
-}
-.fotosgaleria img {
-  padding: 0.25em;
-}
-
-.videos {
-  padding-bottom: 1em;
 }
 
 .estilo-letra, .contenedorshowindex, label, .contenedorshow, body h1, body h2, body a {
@@ -328,6 +317,24 @@ body ul {
   height: 4em;
 }
 
+.contenedor-contactoyfoto {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "foto cuestionario cuestionario cuestionario cuestionario";
+}
+
+.foto-contacto {
+  grid-area: foto;
+}
+.foto-contacto img {
+  width: 80%;
+  height: 80%;
+  border-radius: 200px;
+  border: 3px solid red;
+}
+
 .maincontacto {
   flex: 1;
   padding-top: 1em;
@@ -343,6 +350,7 @@ label {
   display: grid;
   margin: auto;
   width: 90%;
+  grid-area: cuestionario;
 }
 
 .barra25 {
@@ -379,6 +387,12 @@ label {
   padding-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+  .contenedor-contactoyfoto {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .estilo-letra, .contenedorshowindex, body h1, body h2, body a, .contenedorshow, label {
   color: black;
   text-transform: uppercase;
@@ -492,6 +506,8 @@ label {
 .contenedor-fotos-index {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1em;
   width: 50%;
 }
@@ -502,17 +518,51 @@ label {
 .galeria-index {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 0.3em;
 }
 
-.fotosindex {
-  gap: 1em;
-}
 .fotosindex img {
   width: 8em;
   height: 8em;
 }
 
+.estilo-letra, body h1, body h2, body a, .contenedorshow, label, .contenedorshowindex {
+  color: black;
+  text-transform: uppercase;
+}
+
+.containersfoot, footer .logosfoot, footer .redesfoot {
+  display: flex;
+  gap: 2em;
+}
+
+.gradientes-general, .gradiante-index-1a2, .gradiante-index-2a3, .gradiante-index-3a4, .gradianteshow, .gradiente-musica-top {
+  width: 100%;
+  height: 4em;
+}
+
+.fotosgaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 60%;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.videos {
+  padding-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+  .fotosgaleria {
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0em;
+  }
+}
 .estilo-letra, body h1, body h2, body a, .contenedorshow, label, .contenedorshowindex {
   color: black;
   text-transform: uppercase;
@@ -586,9 +636,9 @@ footer .logosfoot {
   nav ul li {
     margin-left: 0;
   }
-  section h2 {
-    font-size: 1.8em;
-    padding-top: 0.8em;
+  section h1, section h2 {
+    font-size: 1.6em;
+    padding: 0.5em 0;
   }
   section img {
     padding-top: 1em;
@@ -603,40 +653,67 @@ footer .logosfoot {
     margin-left: auto;
     margin-right: auto;
   }
+  .h-margin-arriba {
+    margin-top: 0.3em;
+  }
   .cuadrado-negro-mobile {
     background-color: black;
     width: 100%;
     height: 25em;
   }
+  .fotodwt {
+    padding: 2em 1em;
+    gap: 1.5em;
+  }
+  .banner-ameri {
+    padding-bottom: 2em;
+  }
+  .banner-galeria-index {
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.61), rgba(0, 0, 0, 0.604)), url(../../assets/img/dukibannersecciongaleriamobile.jpg);
+    justify-content: center;
+    padding: 0.5em;
+    height: 400px;
+  }
+  .contenedor-fotos-index {
+    width: 95%;
+  }
+  .fotosindex {
+    height: 5em;
+  }
+  .fotosindex img {
+    width: 5em;
+    height: 5em;
+  }
   .albumespag {
     display: inline-block;
     height: 95%;
-    width: 65%;
-    background-color: #000000;
+    width: 85%;
     padding: 12px 0;
-    border: 2px solid #cc0404;
-    border-radius: 15px;
-  }
-  .albumespag h3 {
-    padding-top: 1em;
   }
   .albumespag .iconosalbum img {
     width: 90%;
     height: 94%;
   }
-  .fotosindex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 2%;
+  .albumespagindex {
+    height: 70%;
+    width: 85%;
+    padding: 12px 0;
+    gap: 0.2em;
   }
-  .fotosindex img {
-    width: 150px;
-    height: 150px;
+  .albumespagindex img {
+    width: 96%;
+    height: 96%;
+    padding-bottom: 1em;
+  }
+  .fotoduki {
+    height: 500px;
   }
   .videos {
     width: 85%;
     height: 15em;
+  }
+  .maincontacto {
+    padding-bottom: 5em;
   }
   .contactopag {
     width: 90%;
@@ -646,6 +723,16 @@ footer .logosfoot {
   }
   .barra25, .barra50 {
     width: 90%;
+  }
+  .foto-contacto {
+    width: 1%;
+    height: 1%;
+  }
+  .foto-contacto img {
+    display: none;
+  }
+  .bordecontacto {
+    padding-bottom: 1em;
   }
   footer {
     flex-direction: column;
@@ -672,6 +759,30 @@ footer .logosfoot {
     gap: 30px;
     padding: 10px;
     padding-bottom: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .galeria-index {
+    flex-wrap: wrap;
+    padding: 0 3em;
+    height: 12em;
+  }
+  .albumespagindex {
+    height: 68%;
+  }
+  .banner-ameri {
+    height: 780px;
+  }
+  .banner-galeria-index {
+    height: 350px;
+    padding: 1em 1em;
+  }
+  .no-display-360 {
+    width: 0%;
+    height: 0%;
+  }
+  .no-display-360 img {
+    display: none;
   }
 }
 
