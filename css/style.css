@@ -234,7 +234,7 @@ body ul {
 }
 
 .fotoduki {
-  background-image: url(../../assets/img/dukiworldtourbanner.png);
+  background-image: url(../assets/img/dukiworldtourbanner.png);
   height: 850px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -409,7 +409,7 @@ label {
 }
 
 .fotodwt {
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0.781), rgba(0, 0, 0, 0.781)), url(../../assets/img/dukiwtbanner.jpg);
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.781), rgba(0, 0, 0, 0.781)), url(../assets/img/dukiwtbanner.jpg);
   height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -479,7 +479,7 @@ label {
   }
 }
 .banner-ameri {
-  background-image: linear-gradient(hsla(0, 100%, 99%, 0.101), rgba(255, 255, 255, 0.101)), url(../../assets/img/ameribanner.jpg);
+  background-image: linear-gradient(hsla(0, 100%, 99%, 0.101), rgba(255, 255, 255, 0.101)), url(../assets/img/ameribanner.jpg);
   height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -493,7 +493,7 @@ label {
 }
 
 .banner-galeria-index {
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0.61), rgba(0, 0, 0, 0.604)), url(../../assets/img/dukibannersecciongaleria.jpg);
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.61), rgba(0, 0, 0, 0.604)), url(../assets/img/dukibannersecciongaleria.jpg);
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -669,7 +669,7 @@ footer .logosfoot {
     padding-bottom: 2em;
   }
   .banner-galeria-index {
-    background-image: linear-gradient(hsla(0, 0%, 0%, 0.61), rgba(0, 0, 0, 0.604)), url(../../assets/img/dukibannersecciongaleriamobile.jpg);
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.61), rgba(0, 0, 0, 0.604)), url(../assets/img/dukibannersecciongaleriamobile.jpg);
     justify-content: center;
     padding: 0.5em;
     height: 400px;
