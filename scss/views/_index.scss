@@ -1,25 +1,5 @@
 @import "../utilities/variables";
 
-//gradiantes
-.gradiante-index-1a2{
-    width: 100%;
-    height: 4em;
-    background: #000000;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 25%, rgba(124, 156, 180, 1) 70%);
-}
-.gradiante-index-2a3{
-    width: 100%;
-    height: 4em;
-    background: #BCC0B8;
-    background: linear-gradient(180deg, rgba(188, 192, 184, 1) 23%, rgba(162, 14, 14, 1) 78%);
-}
-.gradiante-index-3a4{
-    width: 100%;
-    height: 4em;
-    background: #A20E0E;
-    background: linear-gradient(180deg, rgba(162, 14, 14, 1) 35%, rgba(12, 11, 10, 1) 88%);
-}
-
 //apartado Duki World Tour
 .fotodwt{
     background-image: linear-gradient(hsla(0, 0%, 0%, 0.781), rgba(0, 0, 0, 0.781)), url(../../assets/img/dukiwtbanner.jpg);

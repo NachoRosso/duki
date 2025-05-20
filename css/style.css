@@ -16,6 +16,11 @@
   gap: 2em;
 }
 
+.gradientes-general, .gradiente-musica-top, .gradianteshow, .gradiante-index-3a4, .gradiante-index-2a3, .gradiante-index-1a2 {
+  width: 100%;
+  height: 4em;
+}
+
 .colornav {
   background-color: black;
 }
@@ -51,6 +56,11 @@ header nav ul li a.clickear:hover, header nav ul li a.clickear:focus {
 .containersfoot, footer .logosfoot, footer .redesfoot {
   display: flex;
   gap: 2em;
+}
+
+.gradientes-general, .gradiente-musica-top, .gradianteshow, .gradiante-index-3a4, .gradiante-index-2a3, .gradiante-index-1a2 {
+  width: 100%;
+  height: 4em;
 }
 
 body {
@@ -93,35 +103,50 @@ body ul {
   gap: 2em;
 }
 
+.gradientes-general, .gradiente-musica-top, .gradianteshow, .gradiante-index-3a4, .gradiante-index-2a3, .gradiante-index-1a2 {
+  width: 100%;
+  height: 4em;
+}
+
 .albumespag {
   display: inline-block;
   height: 100%;
-  width: 25%;
+  width: 28%;
   background-color: #000000;
   padding: 15px 0;
   border: 2px solid #cc0404;
-  border-radius: 15px;
+  border-radius: 18px;
+  gap: 1.5em;
 }
 .albumespag img {
-  width: 95%;
-  height: 95%;
+  width: 90%;
+  height: 90%;
+  padding-bottom: 1em;
+  padding-top: 0.5em;
 }
 .albumespag .iconosalbum {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 10px 0;
   padding-bottom: 1em;
+}
+.albumespag .iconosalbum img {
+  width: 98%;
+  height: 98%;
 }
 .albumespag h3 {
   color: #cc0404;
   font-size: 1.5em;
-  padding: 10px 0;
+  font-family: "Michroma", sans-serif;
+  padding-bottom: 0.7em;
+  font-size: 1.1em;
 }
 .albumespag h4 {
   color: #cc0404;
-  font-size: 1.2em;
-  padding: 10px 0;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  font-family: "Michroma", sans-serif;
+  font-size: 0.8em;
 }
 
 .albumespagindex {
@@ -150,7 +175,6 @@ body ul {
 .albumespagindex h3 {
   color: #cc0404;
   font-size: 1.5em;
-  padding: 0;
   font-family: "Michroma", sans-serif;
 }
 
@@ -175,9 +199,47 @@ body ul {
   gap: 2em;
 }
 
+.gradientes-general, .gradiente-musica-top, .gradianteshow, .gradiante-index-3a4, .gradiante-index-2a3, .gradiante-index-1a2 {
+  width: 100%;
+  height: 4em;
+}
+
+.gradiante-index-1a2 {
+  background: #000000;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 25%, rgb(124, 156, 180) 70%);
+}
+
+.gradiante-index-2a3 {
+  background: #BCC0B8;
+  background: linear-gradient(180deg, rgb(188, 192, 184) 23%, rgb(162, 14, 14) 78%);
+}
+
+.gradiante-index-3a4 {
+  background: #A20E0E;
+  background: linear-gradient(180deg, rgb(162, 14, 14) 35%, rgb(12, 11, 10) 88%);
+}
+
 .gradianteshow {
   background: #A20E0E;
   background: linear-gradient(0deg, rgb(162, 14, 14) 50%, rgb(12, 11, 10) 96%);
+}
+
+.gradiente-musica-top {
+  background: #A20E0E;
+  background: linear-gradient(0deg, rgb(162, 14, 14) 50%, rgb(12, 11, 10) 96%);
+}
+
+.estilo-letra, .contenedorshowindex, label, .contenedorshow, body h1, body h2, body a {
+  color: black;
+  text-transform: uppercase;
+}
+
+.containersfoot, footer .logosfoot, footer .redesfoot {
+  display: flex;
+  gap: 2em;
+}
+
+.gradientes-general, .gradiante-index-1a2, .gradiante-index-2a3, .gradiante-index-3a4, .gradianteshow, .gradiente-musica-top {
   width: 100%;
   height: 4em;
 }
@@ -205,7 +267,6 @@ body ul {
 
 .contenedorshow {
   font-size: large;
-  font-family: "Kanit", sans-serif;
   display: grid;
   width: 90%;
   height: 100%;
@@ -220,7 +281,10 @@ body ul {
 .contenedorshow a {
   text-decoration: underline;
 }
-.contenedorshow p {
+.contenedorshow p, .contenedorshow h2, .contenedorshow h3 {
+  font-family: "Kanit", sans-serif;
+  font-weight: normal;
+  font-size: 1em;
   margin: 0;
   text-align: center;
 }
@@ -257,6 +321,11 @@ body ul {
 .containersfoot, footer .logosfoot, footer .redesfoot {
   display: flex;
   gap: 2em;
+}
+
+.gradientes-general, .gradiante-index-1a2, .gradiante-index-2a3, .gradiante-index-3a4, .gradianteshow, .gradiente-musica-top {
+  width: 100%;
+  height: 4em;
 }
 
 .maincontacto {
@@ -320,25 +389,9 @@ label {
   gap: 2em;
 }
 
-.gradiante-index-1a2 {
+.gradientes-general, .gradiante-index-1a2, .gradiante-index-2a3, .gradiante-index-3a4, .gradianteshow, .gradiente-musica-top {
   width: 100%;
   height: 4em;
-  background: #000000;
-  background: linear-gradient(180deg, rgb(0, 0, 0) 25%, rgb(124, 156, 180) 70%);
-}
-
-.gradiante-index-2a3 {
-  width: 100%;
-  height: 4em;
-  background: #BCC0B8;
-  background: linear-gradient(180deg, rgb(188, 192, 184) 23%, rgb(162, 14, 14) 78%);
-}
-
-.gradiante-index-3a4 {
-  width: 100%;
-  height: 4em;
-  background: #A20E0E;
-  background: linear-gradient(180deg, rgb(162, 14, 14) 35%, rgb(12, 11, 10) 88%);
 }
 
 .fotodwt {
@@ -470,6 +523,11 @@ label {
   gap: 2em;
 }
 
+.gradientes-general, .gradiante-index-1a2, .gradiante-index-2a3, .gradiante-index-3a4, .gradianteshow, .gradiente-musica-top {
+  width: 100%;
+  height: 4em;
+}
+
 footer {
   background-color: black;
   padding: 12px 2em;
@@ -495,6 +553,11 @@ footer .logosfoot {
 .containersfoot, footer .redesfoot, footer .logosfoot {
   display: flex;
   gap: 2em;
+}
+
+.gradientes-general, .gradiante-index-1a2, .gradiante-index-2a3, .gradiante-index-3a4, .gradianteshow, .gradiente-musica-top {
+  width: 100%;
+  height: 4em;
 }
 
 @media (max-width: 768px) {
@@ -558,8 +621,8 @@ footer .logosfoot {
     padding-top: 1em;
   }
   .albumespag .iconosalbum img {
-    width: 2em;
-    height: 3em;
+    width: 90%;
+    height: 94%;
   }
   .fotosindex {
     display: flex;

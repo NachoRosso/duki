@@ -1,0 +1,32 @@
+@import "../utilities/variables";
+
+//index
+.gradiante-index-1a2{
+    @extend .gradientes-general;
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 25%, rgba(124, 156, 180, 1) 70%);
+}
+.gradiante-index-2a3{
+    @extend .gradientes-general;
+    background: #BCC0B8;
+    background: linear-gradient(180deg, rgba(188, 192, 184, 1) 23%, rgba(162, 14, 14, 1) 78%);
+}
+.gradiante-index-3a4{
+    @extend .gradientes-general;
+    background: #A20E0E;
+    background: linear-gradient(180deg, rgba(162, 14, 14, 1) 35%, rgba(12, 11, 10, 1) 88%);
+}
+
+//Shows
+.gradianteshow{
+    @extend .gradientes-general;
+    background: #A20E0E;
+    background: linear-gradient(0deg, rgba(162, 14, 14, 1) 50%, rgba(12, 11, 10, 1) 96%);
+}
+
+//Musica
+.gradiente-musica-top{ //POR AHORA NO SE USA
+    @extend .gradientes-general;
+    background: #A20E0E;
+    background: linear-gradient(0deg, rgba(162, 14, 14, 1) 50%, rgba(12, 11, 10, 1) 96%);
+}

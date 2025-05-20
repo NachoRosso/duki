@@ -14,9 +14,14 @@ $letra-secundaria: "Kanit", sans-serif;
     gap:2em;
 }
 
+.gradientes-general{
+    width: 100%;
+    height: 4em;
+}
+
 //mixins
-@mixin albumesh ($tamanio, $padding) {
+@mixin albumesh ($tamanio) {
     color: $rojo-secundario;
     font-size: $tamanio;
-    padding: $padding;
 }
+

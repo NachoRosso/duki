@@ -3,27 +3,39 @@
 .albumespag{
     display: inline-block;
     height: 100%;
-    width: 25%;
+    width: 28%;
     background-color: #000000;
     padding: 15px 0;
     border: 2px solid #cc0404;
-    border-radius: 15px;
+    border-radius: 18px;
+    gap: 1.5em;
     img{
-        width: 95%;
-        height: 95%;
+        width: 90%;
+        height: 90%;
+        padding-bottom: 1em;
+        padding-top: 0.5em;
     }
     .iconosalbum{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        padding-top: 10px 0;
         padding-bottom: 1em;
+        img{
+            width: 98%;
+            height: 98%;
+        }
     }
     h3{
-        @include albumesh(1.5em, 10px 0)
+        @include albumesh(1.5em);
+        font-family: $letra-principal;
+        padding-bottom: 0.7em;
+        font-size: 1.1em;
     }
     h4{
-        @include albumesh(1.2em, 10px 0)
+        @include albumesh(1.5em);
+        padding-bottom: 1em;
+        font-family: $letra-principal;
+        font-size: 0.8em;
     }
 }
 
@@ -50,7 +62,7 @@
         }
     }
     h3{
-        @include albumesh(1.5em, 0);
+        @include albumesh(1.5em);
         font-family: $letra-principal;
         
     }

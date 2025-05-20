@@ -1,13 +1,5 @@
 @import "../utilities/variables";
 
-//gradiantes
-.gradianteshow{
-    background: #A20E0E;
-    background: linear-gradient(0deg, rgba(162, 14, 14, 1) 50%, rgba(12, 11, 10, 1) 96%);
-    width: 100%;
-    height: 4em;
-}
-
 .fotoduki{
     background-image: url(../../assets/img/dukiworldtourbanner.png);
     height: 850px;
@@ -33,7 +25,6 @@
 .contenedorshow{
     @extend .estilo-letra;
     font-size: large;
-    font-family: $letra-secundaria;
     display: grid;
     width: 90%;
     height: 100%;
@@ -48,7 +39,10 @@
     a{
         text-decoration: underline;
     }
-    p{
+    p, h2, h3{
+        font-family: $letra-secundaria;
+        font-weight: normal;
+        font-size: 1em;
         margin: 0;
         text-align: center;
     }
