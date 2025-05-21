@@ -104,10 +104,14 @@
         padding: 12px 0;
         gap: 0.2em;
         img{
-            width: 96%;
-            height: 96%;
+            width: 94%;
+            height: 94%;
             padding-bottom: 1em;
         }
+    }
+
+    .separacion-albumes{
+        flex-direction: column;
     }
 
     //Shows
@@ -117,8 +121,11 @@
 
     //videos de galeria
     .videos{
-        width: 85%;
-        height: 15em;
+        width: 76%;
+        height: 14em;
+    }
+    .tamaño-carrousel{
+    width: 100%;
     }
 
     //adaptamiento responsive de la pagina de contacto
@@ -196,5 +203,8 @@
         img{
             display: none;
         }
+    }
+    .videos{
+        height: 12em;
     }
 }

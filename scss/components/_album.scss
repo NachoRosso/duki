@@ -39,6 +39,15 @@
     }
 }
 
+.separacion-albumes{
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
 .albumespagindex{
     display: flex;
     flex-direction: column;

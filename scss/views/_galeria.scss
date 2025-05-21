@@ -14,11 +14,31 @@
     padding-bottom: 1em;
 }
 
+.tamaño-carrousel{
+    width: 70%;
+}
+
 @media (max-width: 768px) {
     .fotosgaleria{
     width: 95%;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 0em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2em;
+    img{
+        width: 98%;
+        height: 100%;
     }
+    }
+}
+
+.carrousel-boton-adelante{
+    background-image: url(../assets/img/flechaderecha.png);
+    width: 3em;
+    height: 3em;
+}
+
+.carrousel-boton-atras{
+    background-image: url(../assets/img/flechaizquierda.png);
+    width: 3em;
+    height: 3em;
 }
